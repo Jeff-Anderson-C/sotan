@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sotan Collaborative</title>
+        <meta name="description" content="Chef Consultant">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&amp;display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        {% load static %}
+        <style>
+            .parallax {
+                background-image: url("{% static 'images/mint.jpg' %}");
+                min-height: 720px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                }
+        </style> 
+        <style>
+            .parallaxt {
+                background-image: url("{% static 'images/mint.jpg' %}");
+                min-height: 100px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                }
+        </style> 
+    </head>
+    <body>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js" async defer></script>
+        
+        <div class="modal" id="creationModal" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-dark">Creation</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-dark">Collaboration is best used in the menu creation process. You have a concept, or feeling for how you want your menu to read and perform. 
+                            We can work through the details and develop a menu that brings your vision to the table. We will engineer the menu to provide balance in the kitchen during 
+                            peak hours and on the p&l at the end of the period. Menus can begin to drift away from your core concept over time, most of the time 
+                            it's in an effort to provide more/new guests with an option that wasn't present before, and sometimes it's to save cost. We can focus on your strengths
+                            and produce a menu that's efficient and representative.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="prodModal" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-dark">Product</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-dark">Keeping track of food cost is a never ending battle. We can further develop your current routine
+                                                to provide you with more detailed information, and solutions for when variances arise. Accurately costing menus and recipes
+                                                is one of the simplest, though tedious, steps to take towards realizing your true food cost. Let's clean up order guides,
+                                                document our specs, and get into a routine of checking in on our costs. Having a good understanding of where you food cost
+                                            is and how to adjust it on the fly is a key to offering a menu at a price that's fair to you and your guest.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="structModal" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-dark">Creation</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-dark">SaaS (software as a service) products are abundant for the restaurant industry. Some are free and some charge a monthly fee, 
+                            When it comes to creating a hub for your operations information some of these products are essential. Whether it is scheduling and shift notes,
+                            documenting and storing recipes, recording and paying invoices, or costing your menu; there are many choices available to you and one of them
+                            could have a huge impact on the way you operate. Let's talk about them.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex inline justify-content-between sticky-sm-top bg-light pt-4 pb-4 ps-2 pe-2 shadow parallaxt">
+            <div class="text-light"><h1>Sotan Collaborative: Culinary Consultant</h1></div>
+        
+                <div class="m-0"><img style="width: 100px;" src="{% static 'images/logo-icon.png' %}" alt="">
+            </div>
+        </div>
+
+        <div class = "">
+            <div class="parallax d-flex justify-content-center">
+                <img style="width: 450px; height: 600px;" class="image-fluid rounded mt-5" src="{% static 'images/pine-tree-silhouette-1.png' %}" alt="">
+            </div>
+        </div>
+
+                
+                <div class="container d-flex justify-content-between">
+                    <div class="col-9">
+                        <div class="d-flex justify-content-between mb-5 mt-5 p-3 shadow"> 
+                            <a class="text-decoration-none text-dark" href="#" data-bs-toggle="modal" data-bs-target="#prodModal">
+                                <img style="width: 300px;" class="image-fluid rounded mt-5" src="{% static 'images/orange.jpg' %}" alt=""></a>
+                                
+                                <div class="container border border-sm border-dark rounded p-2 m-5"><p class="fw-bold">Managing your 
+                                    daily operations is getting more and more difficult.</p><p> You have goals for service, top and bottom line, 
+                                    finding your place in social spaces to draw in new guests, and managing the ever changing cost of goods; sometimes it 
+                                    feels like your only job is balancing a well staffed happy crew with your labor budget. Finding time to cost and update
+                                    your menu can feel like a luxury, but you know you're not exactly where you need to be. 
+                                </p></div>
+                            
+                        </div>
+                        <div class="d-flex justify-content-between mb-5 mt-5 p-3 shadow"> 
+                            <a class="text-decoration-none text-dark" href="#" data-bs-toggle="modal" data-bs-target="#creationModal">
+                                <img style="width: 300px;" class="image-fluid rounded mt-5" src="{% static 'images/grits.jpg' %}" alt=""></a>
+                                <div class="container border border-sm border-dark rounded p-2 m-5"><p class="fw-bold">Clear, concise, and cohesive communication of your concept.</p>
+                                    <p>Your efficiencies in the restaurant begin to take shape with your ability to describe what you are. Leverage your strengths and the things
+                                        your guests love the most about you. When you start making menu decisions based on what you know about your concept, making decisions becomes
+                                        quicker and easier. Equally as important: you'll have an easier time teaching your staff to make the same kind of decisions when everyone is on the same page. 
+                                    </p>
+                                </div>
+                        </div>
+                        <div class="d-flex justify-content-between mb-5 mt-5 p-3 shadow"> 
+                            <a class="text-decoration-none text-dark" href="#" data-bs-toggle="modal" data-bs-target="#structModal">
+                                <img style="width: 300px;" class="image-fluid rounded mt-5" src="{% static 'images/kitchen.jpg' %}" alt=""></a>
+                                <div class="container border border-sm border-dark rounded p-2 m-5"><p class="fw-bold">Like knives and spats, the right tools provide time saving help.</p>
+                                    <p>For many of our time consuming tasks there are tools available to help organize and streamline our management tasks. Connecting your key managers is essential.
+                                        Gathering your sops, recipes, and documentation in one place that your key managers can access from anywhere can help maintain momentum and help you 
+                                        hit the goals you've set for your team. There are endless platforms and strategies for online organization, try out some free options and figure out 
+                                        what else you might need to keep the ball rolling. Visit <a href="https://www.chefsourced.com">www.ChefSourced.com</a> for recipe database storage.  </p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="card shadow-lg mt-5 height: 300px; " style="width: 18rem; height: 300px;">
+                        <ul class="list-group list-group-flush pt-5">
+                            <li class="list-group-item fw-bold">Opportunities</li>
+                            <li class="list-group-item">Menu/Recipe Costing</li>
+                            <li class="list-group-item">Menu Engineering</li>
+                            <li class="list-group-item">Menu Concept</li>
+                            <li class="list-group-item">Online Recipe Database</li>
+                            <li class="list-group-item">Inventory Tools</li>
+                            <li class="list-group-item">BOH Software</li>
+                        </ul>
+                        <p class="card shadow-lg mt-5 p-1 height: 300px; " style="width: 18rem; height: 300px;"><p class="fw-bold">Why work with a consultant?</p> You and your staff have a full week already, 
+                            but there are certain tasks that you would like to make routine; costing your menu is a big one.
+                            Not only does this process take time but: the learning curve can be intensive, knowing where to start can be difficult, and figuring out how to complete the process as efficiently 
+                            as possible may be enough to have you convince yourself it's not worth the time. You don't want to pull your chef off the line to focus on admin when you have guests to serve, 
+                            and you'd rather not absorb another full time salary to get these projects accomplished. You can benefit from the years of experience others have gathered in these specific areas;
+                            at a fraction of the cost of another annual salary. By establishing and monitoring your food cost, you're better equipped to make purchasing and pricing decisions that can save 
+                            on cost of goods and increase menu item contribution. 
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="container d-flex justify-content-between shadow-lg p-3"><h2></h2>
+                    <div class="container"><h2>About...</h2>
+                        <P>Experienced with over 25 years managing individual restaurant and multi-concept restaurant companies; I have been 
+                            working to improve culinary and operations efficiencies throughout my career. I have always found the best approach to be collaboration. We'll
+                            put our collective experience to use in addressing the tasks you need accomplished to feel successful in your restaurant. 
+                        </P>
+                        <p>Please contact me if you feel there's some room to improve your kitchen operation and would like to start the conversation.</p>
+                        <p>Client references available upon request.</p>
+                    </div>
+                    <div class="">
+                        <img style="width: 200px;" src="{% static 'images/chef.jpg' %}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class=" container d-flex justify-content-around">
+                    <p>Jeff.Anderson@SotanCollaborative.com</p>
+                    <p>|</p>
+                    <p>Instagram: SotanCollaborative</p>
+            </div>
+    </body>
+</html>
